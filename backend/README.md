@@ -34,7 +34,7 @@ backend/
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/e-shop.git
+   git clone https://github.com/hiiamvinay/e-shop.git
    cd e-shop/backend
    ```
 
