@@ -34,7 +34,7 @@ frontend/
 ├── README.md                        # This documentation
 └── vit.config.js
 
-
+```
 ## Setup and Installation
 
 1. **Clone the Repository:**
