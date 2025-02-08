@@ -1,0 +1,6 @@
+Flask==3.0.3
+Werkzeug==3.0.4
+Flask-Mail==0.10.0
+Flask-MySQLdb==2.0.0
+python-dotenv==1.0.1
+

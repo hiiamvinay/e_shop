@@ -1,0 +1,183 @@
+:root {
+    --primary-color: #2874f0;
+    --secondary-color: #ff6161;
+    --background-light: #f1f3f6;
+    --text-primary: #212121;
+    --text-secondary: #878787;
+    --border-color: #e0e0e0;
+  }
+  
+  .order-management {
+    background-color: var(--background-light);
+    min-height: 100vh;
+    padding: 20px;
+    font-family: 'Roboto', Arial, sans-serif;
+  }
+  
+  .page-title {
+    text-align: center;
+    color: var(--text-primary);
+    font-weight: 500;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    letter-spacing: -0.5px;
+  }
+  
+  .tab-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 20px;
+  }
+  
+  .tab-buttons button {
+    padding: 10px 25px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .tab-buttons button.MuiButton-contained {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .order-card {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background-color: white;
+  }
+  
+  .order-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+  }
+  
+  .order-product-image {
+    border-radius: 8px;
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    transition: transform 0.3s ease;
+  }
+  
+  .order-card:hover .order-product-image {
+    transform: scale(1.05);
+  }
+  
+  .placeholder-image {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-light);
+    border-radius: 8px;
+    color: var(--text-secondary);
+    font-weight: 500;
+  }
+  
+  .status-chip {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .status-chip.pending {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+  
+  .status-chip.shipped {
+    background-color: #d1ecf1;
+    color: #0c5460;
+  }
+  
+  .status-chip.delivered {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .status-chip.cancelled {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .order-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .order-actions button {
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .order-actions button:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-summary {
+    margin-top: 10px;
+    color: var(--text-secondary);
+    font-weight: 500;
+  }
+  
+  /* Modal Styles */
+  .MuiDialog-paper {
+    border-radius: 12px;
+  }
+  
+  .MuiDialogTitle-root {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-weight: 600;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 600px) {
+    .page-title {
+      font-size: 1.5rem;
+    }
+  
+    .tab-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .tab-buttons button {
+      width: 100%;
+    }
+  
+    .order-card {
+      flex-direction: column;
+    }
+  
+    .order-product-image {
+      height: 150px;
+    }
+  }
+  
+  /* Scrollbar Styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--background-light);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1e40af;
+  }

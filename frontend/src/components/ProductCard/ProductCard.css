@@ -1,0 +1,111 @@
+/* Common Styles */
+.product-card {
+    border: 2px solid #ccc; /* Default border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 16px; /* Padding inside the card */
+    text-align: center; /* Center text inside the card */
+    transition: transform 0.2s; /* Smooth scaling on hover */
+    width: 300px; /* Fixed width for product cards */
+    height: 500px; /* Fixed height for product cards */
+    margin: 10px; /* Margin around the card */
+    cursor: pointer;
+    background-color: white;
+}
+
+
+
+
+.product-card:hover {
+    transform: scale(1.01); /* Scale effect on hover */
+}
+                   
+.product-image {
+    width:auto; 
+    height: 200px; 
+    border-radius: 8px; 
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.product-name {
+    font-size: 1.5em; /* Adjusted font size */
+    margin: 10px 0;
+}
+
+.product-description {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Price Container */
+.price-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between original and discounted price */
+    align-items: center; /* Center items vertically */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+.product-mrp {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #dd1658; /* Highlighted color for discounted price */
+    margin-left: 10px; /* Add space between MRP and discounted price */
+}
+
+#rupee-icon {
+    margin-left: 10px; /* Space between icon and price */
+    font-size: 0.8em; /* Adjusted icon size to be smaller */
+}
+
+.product-original-price {
+    font-size: 1em;
+    color: #999; /* Light gray for crossed-out price */
+    text-decoration: line-through; /* Cross out the original price */
+}
+
+.product-rating {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+/* Rating Styles */
+.rating-green {
+    background-color: #d4edda; /* Light green background */
+    color: #0b601f; /* Dark green text */
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.rating-yellow {
+    background-color: #fff3cd; /* Light yellow background */
+    color: #856404; /* Dark yellow text */
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.rating-red {
+    background-color: #f8d7da; /* Light red background */
+    color: #721c24; /* Dark red text */
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.star-icon {
+    margin-left: 5px; /* Space between rating text and star */
+}
+
+.highlight-price {
+    color: #dd1658; 
+    text-align: center;
+}
+
+.discount-info {
+    text-align: center; /* Center the discount info */
+    color: #dd1658; /* Red color for discount text */
+    font-weight: bold; /* Make it bold */
+    margin-top: 5px; /* Space above the discount info */
+}
+
+.discount-percentage {
+    font-size: 1.2em; /* Slightly larger font for emphasis */
+}

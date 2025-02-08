@@ -1,0 +1,176 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: navy;
+    padding: 10px 5px;
+    width: 100%;
+    height: 80px;
+    border: 1px solid black;
+}
+
+/* Logo button styles */
+.logo_button {
+  border: none; /* Remove border around the button */
+  background: none; /* Remove default button background */
+  padding: 0; /* Remove padding */
+  margin-left: 10px;
+  cursor: pointer; /* Change cursor to pointer */
+  
+}
+
+/* Logo image styling */
+#logo_img {
+  height: 60px; /* Logo height */
+  width: 320px;
+  width: auto; /* Maintain aspect ratio */
+  border: 3px solid black; /* Optional border */
+}
+
+/* Navigation styles */
+nav ul {
+  list-style: none; /* Remove bullet points from list */
+  display: flex; /* Display items horizontally */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove default margin */
+  
+  
+  
+}
+
+nav li {
+  
+  margin-right: 30px;
+  font-size: 18px; /* Space between each navigation item */
+  
+  
+}
+
+nav a {
+  text-decoration: none; /* Remove underline from links */
+   /* Font size */
+  font-weight: bold; /* Make the text bold */
+  color: white;
+  font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    font-size: 22px;
+}
+
+
+.search-bar{
+    align-items: center;
+    
+   
+    
+}
+
+/* .search-input{
+    height: 40px;
+    width: 600px;
+    font-size: 18px;
+    padding-left: 20px;
+} */
+.search-button{
+    height: 40px;
+    width: 80px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: lightgray;
+    cursor: pointer;
+    
+}
+
+.location-container {
+    position: relative; /* Position relative to contain the dropdown */
+}
+
+.location {
+    display: flex; /* Flexbox to align text and dropdown arrow horizontally */
+    text-align: center; /* Center items vertically */
+    cursor: pointer; /* Change cursor to pointer */
+    
+    
+   
+}
+
+
+
+
+
+
+
+.selected-location {
+    color: white; /* Set text color to black */
+    padding: 1px; /* Add some padding */
+    font-weight: bold;
+    
+}
+
+/* Dropdown arrow styles */
+.dropdown-arrow {
+    margin-left: 5px; /* Space between location text and arrow */
+    color: white;
+}
+
+.dropdown {
+    position: absolute; /* Position dropdown absolutely */
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure dropdown is above other elements */
+    margin-top: 5px; /* Space between location and dropdown */
+    padding: 0; /* No padding around dropdown */
+    list-style: none; /* Remove bullet points */
+    display: block; /* Ensure dropdown displays as a block */
+}
+
+.dropdown li {
+    padding: 10px 20px; /* Padding for dropdown items */
+    cursor: pointer; /* Change cursor to pointer for dropdown items */
+    white-space: nowrap; /* Prevent text wrapping */
+    display: block; /* Ensure each item takes up the full width and is stacked vertically */
+}
+
+.dropdown li:hover {
+    background-color: #f0f0f0; /* Highlight on hover */
+}
+
+
+/* Existing styles... */
+
+/* Item dropdown styles */
+.item-dropdown {
+  position: absolute; /* Position dropdown absolutely */
+  background-color: white; /* Background color of the dropdown */
+  border: 1px solid #ccc; /* Border for the dropdown */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for the dropdown */
+  z-index: 1000; /* Ensure dropdown is above other elements */
+  margin-top: 6px; /* Space between input and dropdown */
+  padding: 0; /* No padding around dropdown */
+  list-style: none; /* Remove bullet points */
+  width: 600px /* Full width of the input */
+}
+
+.item-dropdown li {
+  padding: 10px 20px; /* Padding for dropdown items */
+  cursor: pointer; /* Change cursor to pointer for dropdown items */
+  white-space: nowrap; /* Prevent text wrapping */
+  display: block; /* Ensure each item takes up the full width and is stacked vertically */
+}
+
+.item-dropdown li:hover {
+  background-color: #f0f0f0; /* Highlight on hover */
+}
+
+/* Additional styles for the search input */
+.search-input {
+  height: 40px; /* Height of the search input */
+  width: 600px; /* Width of the search input */
+  font-size: 18px; /* Font size */
+  padding-left: 20px; /* Padding for the input */
+  border: 1px solid #ccc; /* Border for the input */
+  border-radius: 4px; /* Rounded corners */
+}

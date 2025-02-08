@@ -1,0 +1,359 @@
+/* Cart.css */
+
+.cart-page {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+  }
+  
+  .cart-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .cart-list {
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .item-image {
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .item-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  
+  .item-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: flex-start;
+  }
+  
+  h2 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .price-section {
+    margin-top: 10px;
+  }
+  
+  .mrp-price {
+    color: #999;
+    font-size: 14px;
+  }
+  
+  .discounted-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745;
+  }
+  
+  .quantity {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #555;
+  }
+  
+  .action-buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Style for the toggle buttons */
+.toggle-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #ddd; /* Default button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-button.active {
+    background-color: #007bff; /* Active button color */
+  }
+  
+  .toggle-button:not(.active):hover {
+    background-color: #bbb; /* Hover color for non-active buttons */
+  }
+  
+  .toggle-button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+ 
+  
+  .rent-options {
+    margin-top: 10px;
+  }
+  
+  .rent-options label {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  
+  .rent-options input {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .remove-button {
+    display: flex;
+    align-items: center;
+    color: #d9534f;
+    font-size: 18px;
+  }
+  
+  .remove-button svg {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .cart-summary {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+  }
+  
+  .cart-summary h3,
+  .cart-summary h4 {
+    margin: 0;
+  }
+  
+  .proceed-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .proceed-button:hover {
+    background-color: #218838;
+  }
+
+/* Existing styles... */
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.qty-button {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.qty-button:hover {
+  background-color: #e0e0e0;
+}
+
+.qty-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.quantity-control .quantity {
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+/* Rent Toggle Styles */
+.rent-toggle-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.rent-toggle {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-text {
+  flex: 1;
+  text-align: center;
+  z-index: 1;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.buy-text {
+  color: white;
+}
+
+.rent-text {
+  color: #666;
+}
+
+.toggle-slider {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.rent-toggle.rent-active .toggle-slider {
+  transform: translateX(100%);
+}
+
+.rent-toggle.rent-active .buy-text {
+  color: #666;
+}
+
+.rent-toggle.rent-active .rent-text {
+  color: white;
+}
+
+/* Additional styles for quantity and rent day controls */
+.quantity-control-wrapper,
+.rent-days-control-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  gap: 8px;
+}
+
+.quantity-control-label,
+.rent-days-control-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #555;
+  font-size: 14px;
+}
+
+.quantity-control,
+.rent-days-control {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  overflow: hidden;
+  width: fit-content;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.qty-button,
+.days-button {
+  background-color: transparent;
+  border: none;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.qty-button:hover,
+.days-button:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+.qty-button:disabled,
+.days-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.quantity,
+.rent-days-input {
+  width: 40px;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 0;
+}
+
+.rent-days-input {
+  width: 50px;
+}
+
+.days-unit {
+  margin-left: 8px;
+  color: #666;
+  font-size: 14px;
+}
+
+.qty-decrease svg,
+.days-decrease svg {
+  color: #dc3545;
+}
+
+.qty-increase svg,
+.days-increase svg {
+  color: #28a745;
+}
+
+/* Remove default input number arrows */
+.rent-days-input::-webkit-outer-spin-button,
+.rent-days-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.rent-days-input[type=number] {
+  -moz-appearance: textfield;
+}

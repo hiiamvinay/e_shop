@@ -1,0 +1,164 @@
+/* Full-page container with subtle background color */
+.auth-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 100vh;           /* Full viewport height */
+    background-color: skyblue; /* Light blue background */
+}
+
+/* Auth box with rounded corners, shadow, and padding */
+.auth-box {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 400px;  /* Set a max-width for the form box */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading with modern font and color */
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+/* Styling for each input field */
+.input-field {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Input styling */
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.2s;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Password field styling */
+.password-field {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Password toggle icon */
+.password-toggle-icon {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    color: #888;
+}
+
+.password-toggle-icon:hover {
+    color: #333;
+}
+
+/* Main action button */
+.auth-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;  /* Center loader and text horizontally */
+    align-items: center;      /* Center loader and text vertically */
+}
+
+.auth-btn:hover {
+    background-color: #218838;
+}
+
+.auth-btn:disabled {
+    background-color: #ddd;
+}
+
+/* Toggle button for switching between login and sign up */
+.toggle-btn {
+    margin-top: 20px;
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.toggle-btn:hover {
+    color: #0056b3;
+}
+
+/* Add transitions to form elements */
+.auth-form input,
+.auth-btn,
+.toggle-btn {
+    transition: all 0.3s ease;
+}
+
+/* Loader (spinner) inside the button */
+.loader {
+    border: 4px solid #f3f3f3; /* Light grey */
+    border-top: 4px solid #28a745; /* Green */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* For OTP form container */
+.otp-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Container for OTP inputs */
+.otp-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Individual OTP input fields */
+.otp-input {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+}
+
+.otp-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}

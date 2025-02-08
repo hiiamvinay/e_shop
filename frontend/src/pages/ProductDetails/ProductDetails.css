@@ -1,0 +1,95 @@
+.product-details{
+    padding: 20px;
+    /* background-color: skyblue; */
+    display: flex;
+    flex-direction: row; /* Aligns children (image and description) side by side */
+    gap: 20px; /* Optional: Adds space between the image and description */
+  
+
+}
+#product-img{
+    flex: 1;
+    height: 600px;
+    margin-top: 30px;
+    margin-bottom: 200px;
+    margin-left: 30px;
+    border: 3px solid black;
+
+}
+
+.product-info{
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.product-name{
+    font-weight: bold;
+}
+.product-des{
+    margin-top: 20px;
+    height: auto;
+    width: 600px;
+}
+
+.xxp{
+    margin-top: 20px;
+}
+
+.mrp{
+        font-size: 1em;
+        color: #999; /* Light gray for crossed-out price */
+        text-decoration: line-through; /* Cross out the original price */
+        
+}
+
+.product-mrp {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #dd1658; /* Highlighted color for discounted price */
+    margin-left: 30px; /* Add space between MRP and discounted price */
+}
+
+.product-quantity{
+        margin-top: 70px;
+}
+
+#lable_q{
+    font-size: 15px;
+    color: green;
+    font-weight: bold;
+    margin-left: 30px;
+
+}
+
+#quantity{
+      margin-left: 30px;
+      width: 200px;
+      height: 30px;
+}
+
+/* Add-to-Cart Button Styling */
+.add-to-cart {
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  
+  .add-to-cart button {
+    background-color: #ff9800; /* Orange background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding for spacing */
+    font-size: 16px; /* Font size */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effect */
+  }
+  
+  .add-to-cart button:hover {
+    background-color: #e68900; /* Darker orange on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .add-to-cart button:active {
+    background-color: #cc7700; /* Even darker on click */
+    transform: scale(0.98); /* Slight shrinking on click */
+  }

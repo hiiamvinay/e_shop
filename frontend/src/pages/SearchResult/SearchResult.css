@@ -1,0 +1,18 @@
+.search-results {
+    padding: 20px;
+    text-align: center;
+    background-color: skyblue;
+}
+.products-list {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of product cards */
+    justify-content: flex-start; /* Align items to the start */
+    padding: 60px; /* Add some padding around the list */
+    gap: 20px; /* Space between product cards */
+    
+}
+
+#search{
+    text-align: left;
+    color : black
+}

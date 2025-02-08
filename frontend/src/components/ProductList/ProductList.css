@@ -1,0 +1,18 @@
+.product-list {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of product cards */
+    justify-content: flex-start; /* Align items to the start */
+    padding: 60px; /* Add some padding around the list */
+    gap: 20px; /* Space between product cards */
+    background-color: skyblue;
+}
+
+
+
+
+.product-card {
+    background-color: white;
+    flex: 0 1 300px; /* Allow cards to grow and shrink, with a base width of 300px */
+    max-width: 300px; /* Ensure cards do not exceed this width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
